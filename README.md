@@ -164,7 +164,7 @@ These results align with financial intuition and confirm that the model captures
 
 ---
 
-## Skills Demonstrated
+## Skills Used
 
 * Credit risk modeling
 * Handling class imbalance
@@ -172,3 +172,7 @@ These results align with financial intuition and confirm that the model captures
 * Feature engineering
 * Scikit-learn pipelines
 * Reproducible ML workflows
+
+---
+
+I am open to collaborating and improving this project more. If there is anything I overlooked that you noticed feel free to get in touch with me, create a pull request or send me your critique. Happy modelling!
