@@ -124,18 +124,43 @@ This model serves as a strong, interpretable baseline.
 * Limited interaction effects
 * No hyperparameter tuning
 
-These limitations will be addressed in **Part 2** (keep a lookout for the update).
+These limitations will be addressed in **Part 2**.
 
 ---
 
-## Future Work (Part 2)
-
+## Part 2
 Planned improvements include:
 
 * Random Forest and Gradient Boosting models
 * Feature importance analysis
 * Improved handling of class imbalance
 * Performance comparison across models
+
+---
+
+In the part 2 notebook I also added some improvements to the part 1 code resulting in a better ROC-AUC (to 0.6994767897448102 from 0.6883320888519758). From implementing the non-linear model to the same dataset we achieve a ROC-AUC of 0.7068072167337032. This is properly detailed below.
+
+---
+
+## Results part 2
+
+* **Model**: Tree based model - Random Forest
+* **ROC-AUC (Test Set)**: **0.71**
+* **Accuracy**: **0.78**
+
+---
+
+## Feature Importance
+
+Feature importance from the Random Forest model highlights the primary drivers of default risk.
+
+Interest rate and credit grade are the most influential variables consistent with risk-based loan pricing. Term length and dti ratio also plaay significant roles, reflecting borrower leverage and credit maturity.
+
+These results align with financial intuition and confirm that the model captures meaningful risk signals.
+
+---
+
+## END
 
 ---
 
@@ -147,10 +172,3 @@ Planned improvements include:
 * Feature engineering
 * Scikit-learn pipelines
 * Reproducible ML workflows
-
----
-
-## Notes
-
-This project prioritizes **sound modeling practice and interpretability**, reflecting real-world financial risk modeling rather than leaderboard optimization.
-
