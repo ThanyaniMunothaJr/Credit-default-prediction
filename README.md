@@ -7,8 +7,8 @@ This project builds a **credit risk classification model** to predict whether a 
 
 The project is intentionally structured in **two parts**:
 
-* **Part 1 (current)**: Interpretable baseline model using Logistic Regression
-* **Part 2 (future work)**: Non-linear models and performance improvements
+* **Part 1**: Interpretable baseline model using Logistic Regression
+* **Part 2**: Tree-based models and performance improvements
 
 The focus of Part 1 is **correct modeling practice**, metric selection, and clear financial interpretation rather than maximum performance.
 
@@ -105,12 +105,12 @@ Due to class imbalance, accuracy can be misleading. A naive model predicting "no
 ## Results (Part 1)
 
 * **Model**: Logistic Regression
-* **ROC-AUC (Test Set)**: **0.69**
+* **ROC-AUC (Test Set)**: **0.6985974162001144**
 * **Accuracy**: **0.78**
 
 ### Interpretation
 
-An ROC-AUC of 0.69 indicates that the model meaningfully distinguishes between risky and safe borrowers and performs substantially better than random classification.
+An ROC-AUC of 0.6985974162001144 indicates that the model meaningfully distinguishes between risky and safe borrowers and performs substantially better than random classification.
 
 Recall for the default class shows that the model captures a non-trivial portion of high-risk loans, which is more important than overall accuracy in credit-risk applications.
 
@@ -138,14 +138,14 @@ Planned improvements include:
 
 ---
 
-In the part 2 notebook I also added some improvements to the part 1 code resulting in a better ROC-AUC (to 0.6994767897448102 from 0.6883320888519758). From implementing the non-linear model to the same dataset we achieve a ROC-AUC of 0.7068072167337032. This is properly detailed below.
+In the final notebook I was able to utilize the entire dataset and not trim to the frist 1,000,000 entries due to an increase in memory capacity of my computer(Yes, I upgraded). You will also spot some small changes in the initial code to make it all cleaner.
 
 ---
 
 ## Results part 2
 
 * **Model**: Tree based model - Random Forest
-* **ROC-AUC (Test Set)**: **0.71**
+* **ROC-AUC (Test Set)**: **0.7052853956612875**
 * **Accuracy**: **0.78**
 
 ---
@@ -156,14 +156,31 @@ Feature importance from the Random Forest model highlights the primary drivers o
 
 Interest rate and credit grade are the most influential variables consistent with risk-based loan pricing. Term length and dti ratio also plaay significant roles, reflecting borrower leverage and credit maturity.
 
-These results align with financial intuition and confirm that the model captures meaningful risk signals.
+
+---
+
+## Use case
+
+In this notebook we will see how this model works when faced with an individual looking to take out a loan or has already taken out a loan and needs to be assessed for furhter risk management/planning to take place.
+
+Let's create a useable tool for people to input their metrics and get a result of whether our financial institution will see them as likely to default or not...
+
+----
+
+This tool will enable them to:
+- See how varioius loan providers view them from behind the desk
+- Play with the metrics and see what numbers can take them from being a "likely to default" client to one that is not
+- Be able to set targets for themselves to reach in order to be more confident when applying for loans
+
+-------
+
+Ethical use for a tool such as this will be of high importance in determining whether it can be launched for the general public. This model is not perfect. Work still needs to be done to improve its performance to a level where the output will be usable. I am open to collaborate with all bright minds to take this model to the next level and develop methodologies to ensure that this tool will be used ethically in the future. Happy modelling!
 
 ---
 
 ## END
 
 ---
-
 ## Skills Used
 
 * Credit risk modeling
@@ -173,6 +190,3 @@ These results align with financial intuition and confirm that the model captures
 * Scikit-learn pipelines
 * Reproducible ML workflows
 
----
-
-I am open to collaborating and improving this project more. If there is anything I overlooked that you noticed feel free to get in touch with me, create a pull request or send me your critique. Happy modelling!
