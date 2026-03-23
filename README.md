@@ -146,7 +146,7 @@ In the final notebook I was able to utilize the entire dataset and not trim to t
 
 * **Model**: Tree based model - Random Forest
 * **ROC-AUC (Test Set)**: **0.7052853956612875**
-* **Accuracy**: **0.78**
+* **Accuracy**: **0.8006689117143931**
 
 ---
 
