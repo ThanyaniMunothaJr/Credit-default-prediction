@@ -106,7 +106,7 @@ Due to class imbalance, accuracy can be misleading. A naive model predicting "no
 
 * **Model**: Logistic Regression
 * **ROC-AUC (Test Set)**: **0.6985974162001144**
-* **Accuracy**: **0.78**
+* **Accuracy**: **0.7997688470222434**
 
 ### Interpretation
 
