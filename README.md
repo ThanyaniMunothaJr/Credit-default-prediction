@@ -161,7 +161,7 @@ Interest rate and credit grade are the most influential variables consistent wit
 
 ## Use case
 
-In this notebook we will see how this model works when faced with an individual looking to take out a loan or has already taken out a loan and needs to be assessed for furhter risk management/planning to take place.
+In this notebook we will see how this model works when faced with an individual looking to take out a loan or has already taken out a loan and needs to be assessed for further risk management/planning to take place.
 
 Let's create a useable tool for people to input their metrics and get a result of whether our financial institution will see them as likely to default or not...
 
